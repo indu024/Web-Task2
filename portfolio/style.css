@@ -1,0 +1,755 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+  }
+  html{
+    float: 0;
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 25px;
+  
+  }
+  ::-webkit-scrollbar-track{
+    background: white;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 30px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: white;
+  }
+
+  body{
+    overflow:scroll;
+  }
+  .container{
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(#90aba1b9 0%,#c3bbb383 55%,#62617c 100%);
+  }
+  #header{
+    display:flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    height: 60px;
+    line-height: 40px;
+    transition: .5s;
+    z-index:111;
+    border-bottom: .2px solid black;
+    
+  }
+  .logo{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 750;
+    color:rgb(113, 106, 106);
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .menu ul{
+    display: flex;
+
+  }
+  .menu li{
+    list-style: none;
+    position: relative;
+    margin:0 15px;
+  }
+  .menu li a{
+    font-size: 20px;
+    color:rgb(72, 111, 123);
+    letter-spacing: 3px;
+    text-transform: capitalize;
+
+  }
+  .menu li:hover a{
+    color: purple;
+  }
+  .menu-btn1{
+    font-size: 10px;
+    padding: auto;
+    justify-content: space-between;
+  }
+.menu-btn{
+    display:none;
+}
+.menu-btn i{
+    font-size:30px;
+}
+.wrapper{
+  
+  position: relative;
+  display: flex;
+  height:100vh;
+  min-height: 700px;
+ 
+}
+
+.col{
+  position: relative;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  animation: imgFloat 7s  infinite;
+
+}
+.image1{
+  
+  overflow: hidden;
+  animation: imgFloat 7s  infinite;
+}
+.image1 img{
+  position: relative;
+  top:30%;
+  justify-content: centesr;
+  align-items: center;
+  width: 400px;
+  height: 440px;
+  bottom: 0;
+  
+  object-fit: cover;
+
+}
+
+@keyframes imgFloat{
+  50%{
+    transform: translateY(2px);
+    border-radius: 45% 55% 45% 55%;
+     
+  }
+}
+
+
+.feature1{
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items:left;
+  text-align:left;
+  min-height: 80vh;
+  flex-direction: column;
+  width:100%;
+  padding-left: 20px;
+  left:70px
+
+}
+.feature-text span{
+  background-color: black;
+  color: white;
+  padding: 3px 8px;
+  font-size: 20px;
+  border-radius: 5px;
+  
+}
+.name{
+  font-size: 50px;
+  font-weight: 600;
+  color:black;
+  margin-block: 10px;
+}
+.description{
+  font-size: 20px;
+  margin-block: 10px;
+}
+.menu-btn2{
+  gap:3px;
+  justify-content: space-between;
+}
+
+.menu-btn2>.btn1{
+  background: rgb(126, 100, 159);
+  color:black;
+}
+.menu-btn2>.btn1:hover{
+  background-color: rgb(72, 57, 121);
+}
+.typedtext{
+  background: linear-gradient(black,black);
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 100%;
+  animation: textcolor 2s linear infinite alternate;
+
+}
+
+@keyframes textcolor{
+  0%{
+    background-size: 0%;
+  }
+  40%{
+    background-size: 100%;
+  }
+  100%{
+    background-size: 100%;
+  }
+}
+.section{
+  width:100%;
+  
+  align-items: center;
+}
+.ABOUT{
+  justify-content: center;
+  align-items:center;
+  margin-bottom: 5em;
+}
+.ABOUT h1{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight:1000;
+  color:rgb(44, 18, 159);
+  margin-bottom: 5px;
+  font-size: 50px;
+}
+.about-info h3{
+  align-items: left;
+}
+h3{
+  font-size: 20px;
+  font-weight: 600;
+  color:black;
+  margin-bottom: 15px;
+}
+.row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+}
+
+.col {
+  width: 50%;
+  bottom:2px;/* Set the width to 100% to take up the entire space */
+}
+
+.about-info {
+  position: absolute;
+  text-align: center; 
+  width: 400px;
+  height: 300px;/* Center the content */
+  padding: 20px; /* Add padding around the content */
+  border: 3px solid #d3b6b6; /* Add a border for visual separation */
+  box-sizing:border-box;
+  box-shadow: 1px 8px 10px 8px rgb(208, 157, 157);
+ 
+  border-radius: 30px;
+}
+.about-btn .btn{
+  border-radius: 30px;
+  color:rgb(235, 231, 237);
+  padding: 2px;
+  background-color: rgb(107, 79, 133);
+}
+.skill1{
+  width:25%;
+  
+  display: flex;
+
+  
+}
+.sk-box1{
+  width: 300px;
+  height: 300px;
+  top: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding around the content */
+  border: 3px solid #d3b6b6; /* Add a border for visual separation */
+  box-sizing:border-box;
+ 
+  border-radius: 30px;
+}
+.skill-name1 {
+  position: relative;
+  top: 20px;
+  align-items: top;
+  justify-content: top; /* Center the content */
+ 
+}
+
+.skill2{
+  width:25%;
+  
+  display: flex;
+  
+
+  
+}
+.sk-box2{
+  width: 300px;
+  height: 300px;
+  top: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding around the content */
+  border: 3px solid #d3b6b6; /* Add a border for visual separation */
+  box-sizing:border-box;
+ 
+  border-radius: 30px;
+}
+.skill-name2 {
+  position: relative;
+  top: 20px;
+  align-items: top;
+  justify-content: top; /* Center the content */
+ 
+}
+.two{
+  width:100%;
+  
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.two-class{
+  width:60%;
+  
+  text-align: center;
+  align-items: center;
+  justify-content:center;
+  
+}
+
+.two-class h2{
+  font-size: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+  position:relative;
+  text-align: center;
+}
+.two-class p{
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+  position:relative;
+  text-align: center;
+}
+.four-part{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content:end;
+  position: relative;
+  
+}
+.f1:hover{
+  background-color: rgb(162, 145, 176);
+  transition:.5s;
+  opacity: 1.0 ease-out;
+}
+.f2:hover{
+  background-color: rgb(162, 145, 176);
+  transition:.5s;
+  opacity: 1.0 ease-out;
+}
+.f3:hover{
+  background-color: rgb(162, 145, 176);
+  transition:.5s;
+  opacity: 1.0 ease-out;
+}
+.f4:hover{
+  background-color: rgb(162, 145, 176);
+  transition:.5s;
+  opacity: 1.0 ease-out;
+}
+.f1>i{
+  font-size: 30px;
+  color:rgb(65, 65, 97);
+}
+.f2>i{
+  font-size: 30px;
+  color:rgb(65, 65, 97);
+}
+.f3>i{
+  font-size: 30px;
+  color:rgb(65, 65, 97);
+}
+
+.f4>i{
+  font-size: 30px;
+  color:rgb(65, 65, 97);
+}
+.f-parts{
+  width:80%;
+  
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  text-align:center;
+  align-items: flex-end;
+  justify-content: end;
+  
+}
+.f1-parts{
+  width:80%;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  text-align:center;
+
+  align-items: flex-end;
+  justify-content: end;
+  
+}
+.f1{
+  display: flex;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  width:20%;
+  padding: 20px; /* Add padding around the content */
+  border: 3px solid #2d2a2a; /* Add a border for visual separation */
+  box-sizing:border-box;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+.f2{
+  display: flex;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  width:20%;
+  justify-content: center;
+  padding: 20px; /* Add padding around the content */
+  border: 3px solid #2d2a2a;; /* Add a border for visual separation */
+  box-sizing:border-box;
+ 
+  border-radius: 15px;
+}
+.f3{
+  display: flex;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  width:20%;
+  align-items: center;
+  padding: 20px; /* Add padding around the content */
+  border: 3px solid #2d2a2a; /* Add a border for visual separation */
+  box-sizing:border-box;
+  justify-content: center;
+  border-radius: 15px;
+}
+.f3p{
+  text-align: center;
+  display: flex;
+}
+.f4{
+  display: flex;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  width:20%;
+  padding: 20px; /* Add padding around the content */
+  border: 3px solid #2d2a2a; /* Add a border for visual separation */
+  box-sizing:border-box;
+  justify-content: center;
+  border-radius: 15px;
+}
+.contact{
+  width:100%;
+  
+  align-items: center;
+}
+.let{
+  justify-content: center;
+  align-items:center;
+  margin-bottom: 5em;
+}
+.let p{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight:1000;
+  color:rgb(44, 18, 159);
+  margin-bottom: 5px;
+  font-size: 50px;
+}
+.row1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+}
+.col2 {
+  width: 50%;
+  bottom:2px;/* Set the width to 100% to take up the entire space */
+}
+
+.contact-description {
+  position: relative;
+  text-align: center; 
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9%;
+ /* Center the content */
+   /* Add padding around the content */
+  
+}
+.contact-description h3{
+  font-size: 40px;
+}
+.contact-description p{
+  font-size: 20px;
+  text-align: center;
+}
+.contact1{
+  width:40%;
+  
+  display: flex;
+  
+}
+.form-control{
+  
+  position: relative;
+  font-size: 50px;
+  
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form-inputs{
+  font-size: 30px;
+}
+.text-area{
+  position: relative;
+  font-size: 50px;
+}
+.footer{
+  background-color: black;
+  padding-top: .5rem;
+}
+.icons{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap:30px
+}
+.social-icons>i{
+  color:white;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 900px){
+    .menu-btn1{
+      display: none;
+    }
+    .menu.responsive{
+      left: 0;
+      
+    }
+    #header{
+      display:flex;
+      position: fixed;
+      width: 100%;
+      justify-content: space-around;
+      height: 80px;
+      line-height: 20px;
+      transition: 3s;
+      z-index:111;
+      border-bottom: .2px solid black;
+      
+    }
+    .menu{
+      position: fixed;
+      top:100px;
+      left:100%;
+      flex-direction: column;
+      justify-content:center;
+      align-items: right;
+      background: white;
+      backdrop-filter: blur(20px);
+      width:100%;
+      min-height: 200px;
+      height: 50vh;
+      transition: .9s;
+      background-color: brown;
+    }
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      
+    }
+    .menu li{
+      text-align: justify;
+      align-items: center;
+      
+    }
+    .menu-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .feature1{
+      position: relative;
+      display: flex;
+      justify-content:center;
+      align-items:left;
+      text-align:left;
+      min-height: 80vh;
+      flex-direction: column;
+      width:100%;
+      padding-left: 20px;
+      left:10px
+    
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      white-space: 2px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .col {
+      width: 100%; /* Set the width to 100% to take up the entire space */
+      
+    }
+    
+    .about-info,
+    .sk-box1,
+    .sk-box2 {
+      width: 100%;
+      max-width: 400px; /* Set a maximum width for responsiveness */
+      margin: 0 auto; /* Center the boxes horizontally */
+    }
+    
+    /* Add other styles for your content if needed */
+    .about-info,
+    .sk-box1,
+    .sk-box2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      border: 3px solid #d3b6b6;
+      box-sizing: border-box;
+      box-shadow: 1px 8px 10px 8px rgb(208, 157, 157);
+      border-radius: 30px;
+    }
+    .skill1{
+      width:100%;
+      margin-bottom: 100px;
+      
+      
+    }
+    .skill2{
+      width:100%;
+      margin-bottom: 100px; 
+      display: flex;
+    }
+
+    .f-parts{
+      width:100%;
+      display: flex;
+      flex-wrap:wrap;
+      flex-direction: row;
+      text-align:center;
+      align-items: flex-end;
+      justify-content: end;
+      
+    }
+    .f1{
+      display: flex;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      width:27.5%;
+      padding: 20px; /* Add padding around the content */
+      border: 3px solid #2d2a2a; /* Add a border for visual separation */
+      box-sizing:border-box;
+      text-align: center;
+      justify-content: center;
+      border-radius: 15px;
+    }
+    .f2{
+      display: flex;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      width:27.5%;
+      padding: 20px; /* Add padding around the content */
+      border: 3px solid #2d2a2a; /* Add a border for visual separation */
+      box-sizing:border-box;
+      text-align: center;
+      justify-content: center;
+      border-radius: 15px;
+    }
+    .f1-parts{
+      width:100%;
+      display: flex;
+      flex-wrap:wrap;
+      flex-direction: row;
+      text-align:center;
+    
+      align-items: flex-end;
+      justify-content: end;
+      
+    }
+    .f3{
+      display: flex;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      width:27.5%;
+      padding: 20px; /* Add padding around the content */
+      border: 3px solid #2d2a2a; /* Add a border for visual separation */
+      box-sizing:border-box;
+      text-align: center;
+      justify-content: center;
+      border-radius: 15px;
+    }
+    .f4{
+      display: flex;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      width:27.5%;
+      padding: 20px; /* Add padding around the content */
+      border: 3px solid #2d2a2a; /* Add a border for visual separation */
+      box-sizing:border-box;
+      text-align: center;
+      justify-content: center;
+      border-radius: 15px;
+    }
+    
+}
+
+
